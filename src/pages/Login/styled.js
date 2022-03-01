@@ -15,7 +15,7 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-    background-color: var(--grey-3);
+    background: var(--grey-3);
     max-width: 337px;
     width: 90%;
     height: 400px;
@@ -23,6 +23,7 @@ export const Content = styled.div`
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
+    margin-top: 30px;
 
     h1,
     span {

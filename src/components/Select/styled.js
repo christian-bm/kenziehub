@@ -38,7 +38,7 @@ export const Content = styled.div`
         color: var(--grey-0);
         border-radius: 8px;
 
-        &:double-button {
+        option {
             background: var(--grey-2);
         }
     }

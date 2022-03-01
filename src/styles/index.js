@@ -43,11 +43,4 @@ export default createGlobalStyle`
     button{
         cursor: pointer;
     }
-
-    option{
-        background:var(--grey-2);
-        height: 25px;
-        border: 1px solid white;
-    }
-
 `;

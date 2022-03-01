@@ -32,10 +32,13 @@ const Login = ({ authenticated, setAuthenticated }) => {
         api.post("/sessions", data)
             .then(({ data }) => {
                 localStorage.setItem(
-                    "@Do.it:token",
+                    "@Kenziehub:token",
                     JSON.stringify(data.token)
                 );
-                localStorage.setItem("@Do.it:user", JSON.stringify(data.user));
+                localStorage.setItem(
+                    "@Kenziehub:user",
+                    JSON.stringify(data.user)
+                );
                 setAuthenticated(true);
                 history.push("/home");
             })

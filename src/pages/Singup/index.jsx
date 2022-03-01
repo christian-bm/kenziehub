@@ -17,7 +17,10 @@ const Signup = ({ authenticated }) => {
             .string()
             .email("Email inválido!")
             .required("Campo obrigatório!"),
-        password: yup.string().required("Campo obrigatório!"),
+        password: yup
+            .string()
+            .min(6, "Minimo de 6 caracteres!")
+            .required("Campo obrigatório!"),
         passwordConfirm: yup
             .string()
             .oneOf([yup.ref("password")], "Senhas diferentes")

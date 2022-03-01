@@ -34,10 +34,10 @@ export const InputContainer = styled.div`
         `}
 
     input {
-        background: transparent;
+        background: var(--grey-2) !important;
         align-items: center;
         flex: 1;
         border: 0;
-        color: var(--grey-0);
+        color: var(--grey-0) !important;
     }
 `;

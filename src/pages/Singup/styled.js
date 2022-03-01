@@ -16,6 +16,8 @@ export const Container = styled.div`
         display: flex;
         justify-content: space-between;
         width: 90%;
+        max-width: 337px;
+        margin-bottom: 30px;
     }
 `;
 
