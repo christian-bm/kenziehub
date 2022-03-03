@@ -36,8 +36,8 @@ const Login = ({ authenticated, setAuthenticated }) => {
                     JSON.stringify(data.token)
                 );
                 localStorage.setItem(
-                    "@Kenziehub:user",
-                    JSON.stringify(data.user)
+                    "@Kenziehub:userId",
+                    JSON.stringify(data.user.id)
                 );
                 setAuthenticated(true);
                 history.push("/home");

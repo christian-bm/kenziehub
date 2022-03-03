@@ -18,6 +18,12 @@ export const Container = styled.div`
         width: 90%;
         max-width: 337px;
         margin-bottom: 30px;
+        align-items: center;
+
+        .button-logoff {
+            width: 60px;
+            height: 32px;
+        }
     }
 `;
 
@@ -25,7 +31,7 @@ export const Content = styled.div`
     background-color: var(--grey-3);
     max-width: 337px;
     width: 90%;
-    height: 400px;
+    height: 506px;
     display: flex;
     flex-direction: column;
     align-items: center;

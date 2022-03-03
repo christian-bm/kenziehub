@@ -25,6 +25,9 @@ export default createGlobalStyle`
         --toastify-color-error: var(--negative);
         --toastify-icon-color-success: var(--sucess);
         --toastify-icon-color-error: var(--negative);
+        --toastify-color-light: var(--grey-2);
+        --toastify-text-color-light: var(--grey-0);
+        --toastify-font-family: 'Inter', sans-serif;
     }
 
     body{
@@ -42,5 +45,35 @@ export default createGlobalStyle`
     
     button{
         cursor: pointer;
+    }
+
+    .errored{
+        color: var(--negative) !important;
+    }
+
+    .ReactModal__Overlay{
+        background-color: rgba(18, 18, 20, 0.5) !important;
+        position: absolute !important;
+        border-radius: 5px;
+        display: flex;
+    }
+
+    .modal{ 
+        background: var(--grey-3);
+        margin: auto;
+        width: 90%;
+        max-width: 320px;
+        top: 50px;
+        border-radius: 5px;
+
+        div + div {
+            margin-top: 10px
+        }
+
+        .button-register {
+            width: 100%;
+            margin: 15px 0;
+            height: 40px;
+        }
     }
 `;

@@ -6,7 +6,9 @@ export const StyledButton = styled.button`
             ? css`var(--primary)`
             : color === "grey-1"
             ? css`var(--grey-1)`
-            : color === "grey-3" && css`var(--grey-3)`};
+            : color === "grey-3"
+            ? css`var(--grey-3)`
+            : color === "transparent" && css`transparent`};
     color: var(--gray-0);
     border: none;
     border-radius: 5px;

@@ -66,7 +66,7 @@ const Signup = ({ authenticated }) => {
                 <figure>
                     <img src={Logo} alt='Logo kenzie hub' />
                 </figure>
-                <Button color={"grey-3"} onClick={() => history.push("/")}>
+                <Button color={"grey-3"} onClick={() => history.push("/")} className={"button-logoff"}>
                     Voltar
                 </Button>
             </div>
